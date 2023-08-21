@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Tilt+Prism&display=swap');
+
 :root {
     --color-1: #0A2342;
     --color-2: #00A8E8;
@@ -12,6 +14,8 @@ body {
     flex-direction: row;
     height: 100vh;
     background-color: var(--color-3);
+    margin: 0;
+    font-family: 'Lora','Times New Roman', Times, serif;
 }
 
 .left-container {
@@ -35,8 +39,8 @@ body {
 }
 
 .company .name {
-    font-size: 2rem;
-    font-weight: 900;
+    font-family: 'Tilt Prism', cursive;
+    font-size: 2.5rem;
     color: var(--color-5);
 }
 
@@ -61,13 +65,14 @@ body {
 
 form {
     color: rgb(54, 54, 54);
+    margin-top: 64px;
 }
 
 form > .container {
     background-color: var(--color-5);
-    padding: 24px 10vw 24px 5vw;
+    padding: 24px 10vw 36px 5vw;
     margin-bottom: 36px;
-    box-shadow: 0 0 10px 1px var(--color-4);
+    box-shadow: 0 3px 10px 1px var(--color-4);
 }
 
 .items {
@@ -85,28 +90,28 @@ form > .container {
 .right-container > .text,
 .right-container > .slogan {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 24px;
     margin-left: 5vw;
-    max-width: 65ch;
+    max-width: 55ch;
     word-spacing: 1px;
 }
 
 legend {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 24px;
 }
 
 .form-btn {
     margin-left: 5vw;
     background-color: var(--color-2);
-    border: none;
+    border: 1px solid blue;
     height: 48px;
     width: 250px;
     border-radius: 10px;
     font-size: 1.3rem;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--color-5);
     margin-bottom: 24px;
 }
@@ -145,4 +150,8 @@ input:focus {
 
 .log-in a:active {
     color: var(--color-1);
+}
+
+.error{
+    border: 1px solid red;
 }
