@@ -11,11 +11,13 @@ body {
     box-sizing: border-box;
     flex-direction: row;
     height: 100vh;
+    background-color: var(--color-3);
 }
 
 .left-container {
     position: relative;
-    flex: 1 0 33vw;
+    flex-basis: 33vw;
+    flex-shrink: 0;
     background-image: url(./img/mathias-reding-ykCjGKmgXEY-unsplash.jpg);
     background-position: center;
     background-size: cover;
@@ -50,4 +52,97 @@ body {
 
 .artist a{
     color: var(--color-4);
+}
+
+.right-container {
+    flex-grow: 1;
+    margin: 15vh 0;    
+}
+
+form {
+    color: rgb(54, 54, 54);
+}
+
+form > .container {
+    background-color: var(--color-5);
+    padding: 24px 10vw 24px 5vw;
+    margin-bottom: 36px;
+    box-shadow: 0 0 10px 1px var(--color-4);
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+}
+
+.items > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-container > .text,
+.right-container > .slogan {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    margin-left: 5vw;
+    max-width: 65ch;
+    word-spacing: 1px;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.form-btn {
+    margin-left: 5vw;
+    background-color: var(--color-2);
+    border: none;
+    height: 48px;
+    width: 250px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-5);
+    margin-bottom: 24px;
+}
+
+.form-btn:hover {
+    background-color: #0a2342cc;
+}
+
+.form-btn:active {
+    background-color: var(--color-1);
+}
+
+form input {
+    width: 300px;
+    border-radius: 3px;
+    border: var(--color-4) 1px solid;
+    height: 1.5rem;
+}
+
+input:focus {
+    outline: blue 1px solid;
+}
+
+.log-in {
+    margin-left: 5vw;
+    font-size: 1.3rem;
+}
+
+.log-in a {
+    color: var(--color-2);
+}
+
+.log-in a:hover {
+    color: #0a2342cc;
+}
+
+.log-in a:active {
+    color: var(--color-1);
 }
