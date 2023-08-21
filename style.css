@@ -1,0 +1,53 @@
+:root {
+    --color-1: #0A2342;
+    --color-2: #00A8E8;
+    --color-3: #EFEFEF;
+    --color-4: #A7A9AC;
+    --color-5: #FFFFFF;
+}
+
+body {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.left-container {
+    position: relative;
+    flex: 1 0 33vw;
+    background-image: url(./img/mathias-reding-ykCjGKmgXEY-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.left-container > .company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 25vh;
+    text-align: center;
+    background-color: #00000080;
+    padding: 10px 0;
+}
+
+.company .name {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--color-5);
+}
+
+.artist {
+    position: absolute;
+    bottom: 0;
+    padding: 2px 0;
+    text-align: center;
+    width: 100%;
+    color: var(--color-5);
+    background-color: #00000080;
+}
+
+.artist a{
+    color: var(--color-4);
+}
