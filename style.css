@@ -70,19 +70,23 @@ form {
 
 form > .container {
     background-color: var(--color-5);
-    padding: 24px 10vw 36px 5vw;
+    padding: 24px 0 36px 5vw;
     margin-bottom: 36px;
     box-shadow: 0 3px 10px 1px var(--color-4);
 }
 
-.items {
+.items > div:nth-child(-1n + 2) {
+    margin-bottom: 24px;
+}
+
+.row {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 24px;
 }
 
-.items > div {
+.items .item {
     display: flex;
     flex-direction: column;
 }
@@ -95,6 +99,7 @@ form > .container {
     margin-left: 5vw;
     max-width: 55ch;
     word-spacing: 1px;
+    line-height: 2rem;
 }
 
 legend {
