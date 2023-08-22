@@ -8,11 +8,14 @@
     --color-5: #FFFFFF;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
-    box-sizing: border-box;
     flex-direction: row;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--color-3);
     margin: 0;
     font-family: 'Lora','Times New Roman', Times, serif;
